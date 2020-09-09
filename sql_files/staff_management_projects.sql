@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `staff_management` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `staff_management`;
 -- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: staff_management
@@ -28,7 +30,7 @@ CREATE TABLE `projects` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +39,7 @@ CREATE TABLE `projects` (
 
 LOCK TABLES `projects` WRITE;
 /*!40000 ALTER TABLE `projects` DISABLE KEYS */;
-INSERT INTO `projects` VALUES (2,'PHP',NULL,NULL),(3,'MySQL',NULL,NULL),(4,'CSS','2020-09-09 09:29:27','2020-09-09 11:16:46'),(5,'HTML','2020-09-09 11:19:36','2020-09-09 11:19:36'),(6,'JAVA','2020-09-09 11:20:05','2020-09-09 11:20:05');
+INSERT INTO `projects` VALUES (1,'CSS','2020-09-09 12:07:24','2020-09-09 12:07:24'),(2,'PHP','2020-09-09 12:07:29','2020-09-09 12:07:29'),(3,'HTML','2020-09-09 12:07:35','2020-09-09 12:07:35'),(4,'MySQL','2020-09-09 12:08:15','2020-09-09 12:08:15');
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-09 17:33:45
+-- Dump completed on 2020-09-09 18:09:45

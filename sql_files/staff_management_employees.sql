@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `staff_management` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `staff_management`;
 -- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: staff_management
@@ -31,7 +33,7 @@ CREATE TABLE `employees` (
   PRIMARY KEY (`id`),
   KEY `employees_project_id_foreign` (`project_id`),
   CONSTRAINT `employees_project_id_foreign` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +42,7 @@ CREATE TABLE `employees` (
 
 LOCK TABLES `employees` WRITE;
 /*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` VALUES (3,'Pirmas Pirmaitis',5,NULL,'2020-09-09 11:32:28'),(5,'Trecias Trecaitis',3,'2020-09-09 09:32:07','2020-09-09 09:32:07'),(6,'Pirmas Pirmaitis',4,'2020-09-09 09:32:16','2020-09-09 11:31:44');
+INSERT INTO `employees` VALUES (1,'Pirmas Pirmaitis',1,'2020-09-09 12:07:46','2020-09-09 12:07:46'),(2,'Antras Antraitis',2,'2020-09-09 12:07:56','2020-09-09 12:07:56'),(3,'Trecias Trecaitis',3,'2020-09-09 12:08:03','2020-09-09 12:08:03'),(4,'Ketvirtas Ketvirtaitis',4,'2020-09-09 12:08:22','2020-09-09 12:08:22');
 /*!40000 ALTER TABLE `employees` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-09 17:33:45
+-- Dump completed on 2020-09-09 18:09:44
