@@ -5,14 +5,18 @@
 4. Use the following commands in the terminal (one by one, make sure you are in the "staff_management_laravel" project directory):
 
 	composer install
+
 	npm install
+
 	cp .env.example .env
+
 	php artisan key:generate
 
 5. Open the .env file via your editor and change the following info:
 
-DB_DATABASE=staff_management
-DB_PASSWORD=mysql
+	DB_DATABASE=staff_management
+	
+	DB_PASSWORD=mysql
 
 4. 
 
