@@ -28,7 +28,8 @@ DB_PASSWORD=mysql
 
 6. Open Mysql and make sure you have a connection with the following info (connection name can differ):
 
-Hostname: 127.0.0.1 
+Hostname: 127.0.0.1
+ 
 Username: root
 
 7. Once connected, select "Server" -> "Data Import". Change the path of "Import from Dump Project Folder" to the path of "sql_files" folder stored in the cloned "staff_management_laravel" folder. Press the "Start Import" button at the bottom right.
