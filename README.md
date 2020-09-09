@@ -1,7 +1,18 @@
 # INSTRUCTIONS:
 1. Open visual studio and run a new terminal.
 2. Use the cd command in the terminal to change the working directory to your desired project placement folder. 
-3. Clone the project with the following terminal command: https://github.com/eimantaspav/staff_management_laravel.git
+3. Clone the project with the following terminal command: git clone https://github.com/eimantaspav/staff_management_laravel.git
+4. Use the following commands in the terminal (one by one, make sure you are in the "staff_management_laravel" project directory):
+
+	composer install
+	npm install
+	cp .env.example .env
+	php artisan key:generate
+
+5. Open the .env file via your editor and change the following info:
+
+DB_DATABASE=staff_management
+DB_PASSWORD=mysql
 
 4. 
 
@@ -17,7 +28,7 @@ Change the path of "Import from Dump Project Folder" to the path of "sql_files" 
 Press the "Start Import" button at the bottom right.
 
 5. Open command terminal in your "staff_management_laravel" folder and enter "php artisan serve".
-6. Browse to your localhost server to view the website.
+6. Browse to your localhost server (it will be displayed in the terminal, or just enter localhost:8000 in your browser) to view the website.
 
 
 # FEATURES
