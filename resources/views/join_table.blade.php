@@ -4,7 +4,7 @@
         <table class="table">
             <tr>
                 <th>Darbuotojas</th>
-                <th>Projekto ID</th>
+                <th>Projektas</th>
             </tr>
             @foreach ($data as $row)
                 <tr>
