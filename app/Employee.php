@@ -8,7 +8,8 @@ class Employee extends Model
 {
     public $fillable = ['name', 'project_id'];
 
-    public function projects() {
+    public function projects()
+    {
         return $this->belongsTo('App\Project');
     }
 }

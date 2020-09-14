@@ -43,7 +43,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/') }}">{{ __('Namai') }}</a>
+                                <a class="nav-link" href="{{ url('home') }}">{{ __('Namai') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/employees') }}">{{ __('Darbuotojai') }}</a>

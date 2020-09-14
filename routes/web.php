@@ -1,5 +1,7 @@
 <?php
 
+use App\Employee;
+use App\Project;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/home', 'HomeController@index');
+
+function index()
+{
+    $employees = Employee::all();
+    $projects   = Project::all();
+
+    return view('/home', compact('articles', 'categories'));
+}
+
 
 Route::resource('projects', 'ProjectController');
 Route::resource('employees', 'EmployeeController');
 
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

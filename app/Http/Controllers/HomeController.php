@@ -15,7 +15,6 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
     }
 
     /**
@@ -26,6 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $employees = Employee::all()->toArray();
-        return view('employees.index', ['employees' => Employee::orderBy('name')->get()]);
+        return view('home', ['employees' => Employee::orderBy('name')->get()]);
     }
 }
